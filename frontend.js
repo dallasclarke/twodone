@@ -60,7 +60,7 @@ document.querySelector('.add-todo').addEventListener('click', function() {
     id: todos.length,
   }
 
-  postTodo();
+  postTodo(todo);
   addTodo(todo);
   printTodo(todo);
   inputBox.value = '';
