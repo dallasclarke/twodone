@@ -1,4 +1,4 @@
-const todos = [];
+let todos = [];
 
 const addTodo = function(todo) {
   todos.push(todo);
@@ -60,6 +60,7 @@ document.querySelector('.add-todo').addEventListener('click', function() {
     id: todos.length,
   }
 
+  postTodo();
   addTodo(todo);
   printTodo(todo);
   inputBox.value = '';
